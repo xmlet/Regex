@@ -109,11 +109,50 @@
     </build>
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- ****************************************************************** -->
+
+    <packaging>jar</packaging>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>
+        A library that provides a fluent interface to write regular expressions.
+    </description>
+    <url>https://github.com/xmlet/Regex</url>
+    <licenses>
+        <license>
+            <name>MIT license</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Luís Duarte</name>
+            <email>39378@alunos.isel.ipl.pt</email>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git@github.com:xmlet/Regex.git</connection>
+        <developerConnection>scm:git:git@github.com:xmlet/Regex.git</developerConnection>
+        <url>git@github.com:xmlet/Regex.git</url>
+        <tag>regex-1.0.0</tag>
+    </scm>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <!-- ***************************************************************** -->
+
     <dependencies>
         <dependency>
             <groupId>com.github.xmlet</groupId>
             <artifactId>regexApi</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
